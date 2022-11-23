@@ -1,5 +1,6 @@
 ---
-- hosts: localhost
-  remote_user: root
+- hosts: fedora_vm
+  remote_user: user
+  become: true
   roles:
-    - ansible-qtile
+    - qtile_fedora
