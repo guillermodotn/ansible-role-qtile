@@ -1,0 +1,13 @@
+---
+# tasks file for ansible-qtile
+
+- name: Debug
+  debug:
+    msg: "{{ mandatory_dependencies + (xorg_dependencies if wm == 'xog' else wayland_dependencies) }}"
+
+- name: Installing dependencies for Qtile
+  become: true
+  yum:
+    name: "{{ mandatory_dependencies + (xorg_dependencies if wm == 'xog' else wayland_dependencies) }}"
+    state: latest
+
