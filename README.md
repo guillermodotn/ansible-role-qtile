@@ -1,7 +1,7 @@
-qtile_fedora
+Qtile Installer
 =========
 
-A easy way to install Qtile window manager on Fedora Workstation.
+Automates the installation of [Qtile](https://qtile.org/) window manager on Fedora Workstation.
 
 
 Requirements

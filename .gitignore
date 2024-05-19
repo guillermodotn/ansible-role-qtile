@@ -1,0 +1,10 @@
+/*.yml
+
+### Ansible ###
+*.retry
+
+### code ###
+.vscode
+
+### Python ###
+.venv
